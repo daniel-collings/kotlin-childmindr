@@ -1,4 +1,4 @@
-package com.childmindr.chilmindrbackend.models
+package com.childmindr.chilmindrbackend.model
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
@@ -10,5 +10,5 @@ data class User(
     val firstName: String,
     val lastName: String,
     val email: String,
-    val clerkId: UUID?
+    val password: String
 )

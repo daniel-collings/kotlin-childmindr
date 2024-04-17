@@ -1,11 +1,9 @@
-package com.childmindr.chilmindrbackend.services
+package com.childmindr.chilmindrbackend.service
 
-import com.childmindr.chilmindrbackend.models.Childminder
-import org.springframework.data.repository.CrudRepository
+import com.childmindr.chilmindrbackend.model.Childminder
+import com.childmindr.chilmindrbackend.repository.ChildminderRepository
 import org.springframework.stereotype.Service
 import java.util.*
-
-interface ChildminderRepository : CrudRepository<Childminder, String>
 
 @Service
 class ChildminderService(

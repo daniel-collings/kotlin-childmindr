@@ -1,11 +1,11 @@
-package com.childmindr.chilmindrbackend.services
+package com.childmindr.chilmindrbackend.service
 
-import com.childmindr.chilmindrbackend.models.Location
+import com.childmindr.chilmindrbackend.model.Location
+import com.childmindr.chilmindrbackend.repository.LocationRepository
 import org.springframework.data.repository.CrudRepository
 import org.springframework.stereotype.Service
 import java.util.*
 import kotlin.math.*
-interface LocationRepository : CrudRepository<Location, String>
 
 @Service
 class LocationService(val db: LocationRepository) {

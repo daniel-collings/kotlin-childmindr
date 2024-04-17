@@ -1,11 +1,10 @@
-package com.childmindr.chilmindrbackend.services
+package com.childmindr.chilmindrbackend.service
 
-import com.childmindr.chilmindrbackend.models.Profile
-import org.springframework.data.repository.CrudRepository
+import com.childmindr.chilmindrbackend.model.Profile
+import com.childmindr.chilmindrbackend.repository.ProfileRepository
 import org.springframework.stereotype.Service
 import java.util.*
 
-interface ProfileRepository : CrudRepository<Profile, String>
 
 @Service
 class ProfileService(val db: ProfileRepository) {

@@ -1,7 +1,7 @@
-package com.childmindr.chilmindrbackend.controllers
+package com.childmindr.chilmindrbackend.controller
 
-import com.childmindr.chilmindrbackend.models.Childminder
-import com.childmindr.chilmindrbackend.services.ChildminderService
+import com.childmindr.chilmindrbackend.model.Childminder
+import com.childmindr.chilmindrbackend.service.ChildminderService
 import org.springframework.web.bind.annotation.*
 
 @RestController

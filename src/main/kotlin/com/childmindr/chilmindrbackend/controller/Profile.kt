@@ -1,7 +1,7 @@
-package com.childmindr.chilmindrbackend.controllers
+package com.childmindr.chilmindrbackend.controller
 
-import com.childmindr.chilmindrbackend.models.Profile
-import com.childmindr.chilmindrbackend.services.ProfileService
+import com.childmindr.chilmindrbackend.model.Profile
+import com.childmindr.chilmindrbackend.service.ProfileService
 import org.springframework.web.bind.annotation.*
 import java.util.*
 
