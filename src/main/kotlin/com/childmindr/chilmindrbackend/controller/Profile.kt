@@ -5,6 +5,7 @@ import com.childmindr.chilmindrbackend.service.ProfileService
 import org.springframework.web.bind.annotation.*
 import java.util.*
 
+@RequestMapping("/api/profile")
 @RestController
 class ProfileController(val service: ProfileService) {
     @GetMapping("/{id}")
@@ -16,7 +17,7 @@ class ProfileController(val service: ProfileService) {
         service.save(childminderProfile)
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/")
     fun delete(@RequestBody id: String) {
         service.deleteProfileById(id)
     }

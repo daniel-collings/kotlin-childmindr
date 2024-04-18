@@ -4,14 +4,14 @@ import org.springframework.stereotype.Component
 @Component
 class DataSeeder(
     private val userSeeder: UserSeeder,
-    private val profileSeeder: ProfileSeeder,
     private val childminderSeeder: ChildminderSeeder,
+    private val profileSeeder: ProfileSeeder,
     private val locationSeeder: LocationSeeder
 ) {
     fun seedData() {
         userSeeder.seedUsers()
-        profileSeeder.seedProfiles()
         childminderSeeder.seedChildminders()
+        profileSeeder.seedProfiles()
         locationSeeder.seedLocations()
     }
 }
